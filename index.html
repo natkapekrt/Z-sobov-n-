@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zásobování</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Správa skladových zásob</h1>
+
+  <table id="products-table">
+    <thead>
+      <tr>
+        <th>Název produktu</th>
+
+        <th>Množství</th>
+
+        <th>Cena</th>
+
+        <th>Celková hodnota</th>
+
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div id="controls">
+
+    <input type="button" value="Vyhledat nejdražší produkt" onclick="findMostExpensiveProduct()">
+    <input type="button" value="Filtrovat podle množství" onclick="filterByQuantity()">
+    <input type="button" value="Vypočítat celkovou hodnotu" onclick="calculateTotalValue()">
+    <input type="button" value="Aktualizovat množství" onclick="updateQuantity()">
+  </div>
+  
+    
+</body>
+</html>
